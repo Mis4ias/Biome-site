@@ -56,7 +56,7 @@ $(document).ready(function(){
     
     var clickEvent = false;
     $('#myCarousel').carousel({
-        interval:   4000    
+        interval:  60000    
     }).on('click', '.list-group li', function() {
             clickEvent = true;
             $('.list-group li').removeClass('active');
@@ -80,4 +80,27 @@ $(window).load(function() {
     var itemlength = $('#myCarousel .item').length;
     var triggerheight = Math.round(boxheight/itemlength+1);
     $('#myCarousel .list-group-item').outerHeight(triggerheight);
+    
+    let widthImg = $('#myCarousel .item img').css("width");
+    $('#myCarousel .item .carousel-caption').css({"width" : widthImg});
 });
+
+
+window.onresize = function () 
+{
+    /// Alterando a altura da lista de notícias para acompanhar a altura da imagem do carrosel de notícias
+    
+    var boxheight = $('#myCarousel .carousel-inner').innerHeight(); // Capturando o tamanho do carrosel
+    
+    var itemlength = $('#myCarousel .item').length; // Capturando a quantidade de notícias que existem na lista
+
+    var triggerheight = Math.round(boxheight/itemlength+1); // Calculando a altura de cada li da lista de notícias lateral 
+    
+    $('#myCarousel .list-group-item').outerHeight(triggerheight); // Setando o tamanho de cada li da lista de notícias lateral para no total ficarem do tamanho da lista 
+
+    /// Alterando o comprimento da descrição da notícia para acompanhar o comprimento da imagem do carrosel de notícias
+    
+    let widthImg = $('#myCarousel .item img').css("width"); // Capturando comprimento da imagem da notícia
+    
+    $('#myCarousel .item .carousel-caption').css({"width" : widthImg}); // Setando comprimento da descrição da notícia com o mesmo comprimento da imagem
+};

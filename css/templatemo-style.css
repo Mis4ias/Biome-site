@@ -277,9 +277,19 @@ header .social-icon li a
 	background-color:#eee;	
 }
 
+@media (min-width: 1200px){
+	#myCarousel .list-group{
+		margin-right: 40px;
+	}
+}
+
 @media (min-width: 992px) { 
-	#myCarousel {padding-right:33.3333%;}
-	#myCarousel .carousel-controls {display:none;} 	
+	#myCarousel {
+		padding-right:33.3333%;
+	}
+	#myCarousel .carousel-controls {
+		display:none;
+	}
 }
 @media (max-width: 991px) { 
 	.carousel-caption p,
