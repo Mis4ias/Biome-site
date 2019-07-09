@@ -104,3 +104,15 @@ window.onresize = function ()
     
     $('#myCarousel .item .carousel-caption').css({"width" : widthImg}); // Setando comprimento da descrição da notícia com o mesmo comprimento da imagem
 };
+
+function myfacebook(social){
+  
+    if(social =='facebook'){
+        window.open("https://www.facebook.com/BioMEoficial/");    
+    }else if(social=='twitter'){
+        window.open("https://twitter.com/bioinfo_UFRN");  
+    }else if(social=='linkedin'){
+        window.open("https://www.linkedin.com/in/biome-ufrn-141249143/"); 
+    }
+    
+};
