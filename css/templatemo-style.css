@@ -5,11 +5,11 @@ http://www.templatemo.com/preview/templatemo_450_awesome
 
 body
 	{
-		background-image: linear-gradient(120deg, #96dedecb 25%, #50b7c9ce 75%);
+ 		background: #303030;
+ 		color: #ffffff;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
 		overflow-x: hidden; /* prevent horizontal scrollbar from appearing */
-		
 	}
 	
 a {
@@ -40,14 +40,14 @@ h1{
  	text-shadow: 0.09em 0.01em 0.3em black;
 }
 
-/* start news events service portfolio contact */
-#news, #events, #service,
+/* start about team service portfolio contact */
+#about, #team, #service,
 #portfolio, #contact
 	{
 		padding-top: 60px;
 		padding-bottom: 40px;
 	}
-/* end news events service portfolio contact */
+/* end about team service portfolio contact */
 
 /* start preloader */
 .preloader
@@ -171,7 +171,7 @@ header .social-icon li a
 /* start nagivation */
 .navbar-default
 	{
-		background: rgba(100, 100, 100, 0.699);
+		background:#5b5b58;
 		border: none;
 		box-shadow: none;
 		margin: 0 !important;
@@ -186,7 +186,7 @@ header .social-icon li a
 	}
 .navbar-default .navbar-nav li a
 	{
-		color: #eee;
+		color: #fff;
 		font-weight: bold;
 		font-size: 13px;
 		height: 70px;
@@ -211,12 +211,11 @@ header .social-icon li a
 /* start home */
 #home
 	{
-		color: white;
 		background: url('../images/home-bg.jpg') no-repeat;
 		background-size: cover;
 		padding-top: 160px;
 		padding-bottom: 100px;
-		min-height: 400px;
+		min-height: 500px;
 	}
 #home h1
 	{
@@ -274,8 +273,7 @@ header .social-icon li a
 	cursor:pointer;
 }
 #myCarousel .list-group .active {
-	border: 2px solid rgba(51, 51, 51, 0.719);
-	color: black;
+	
 	background-color:#eee;	
 }
 
@@ -298,33 +296,33 @@ header .social-icon li a
 	#myCarousel .list-group {display:none;} 
 }
 
-/* start events */
-#events .events-wrapper
+/* start team */
+#team .team-wrapper
 	{
-		background: white;
+		background: #404040;
 		padding-bottom: 10px;
 		-webkit-transition: all 0.4s ease-in-out;
 		        transition: all 0.4s ease-in-out;
 		position: relative;
 	}
-#events .events-wrapper:hover
+#team .team-wrapper:hover
 	{
 		cursor: pointer;
 		opacity: 0.4;
 		bottom: 4px;
 	}
-#events .events-wrapper .events-des
+#team .team-wrapper .team-des
 	{
 		padding: 20px;
 	}
-#events .events-wrapper .events-des span
+#team .team-wrapper .team-des span
 	{
 		color: #28a7e9;
 		display: block;
 		font-weight: bold;
 		padding-bottom: 12px;
 	}
-/* end events */
+/* end team */
 
 /* start service */
 #service .col-md-4
@@ -335,30 +333,18 @@ header .social-icon li a
 	}
 #service .col-md-4:hover
 	{
-		background: white;
-		
-	}
-	#service .col-md-4:hover .fa {
-		color: rgba(51, 51, 51, 0.719);
-		border: 2px solid rgba(51, 51, 51, 0.719);
+		background: #505050;
 	}
 #service .active
 	{
-		background: rgba(255, 255, 255, 0.726);
+		background: #505050;
 		padding: 40px;
-		
 	}
-
-#service .active .fa
-{
-	color: rgba(51, 51, 51, 0.719);
-	border: 2px solid rgba(51, 51, 51, 0.719);
-}
 #service .fa
 	{
-		border: 2px solid white;
+		border: 1px solid #fff;
 		border-radius: 2px;
-		color:white;
+		color: #fff;
 		font-size: 50px;
 		width: 100px;
 		height: 100px;
@@ -395,7 +381,7 @@ header .social-icon li a
 	}
 #portfolio .portfolio-thumb .portfolio-overlay
 	{
-		background: #ffffff;
+		background: #28a7e9;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -418,9 +404,9 @@ header .social-icon li a
 #portfolio .portfolio-thumb .portfolio-overlay .btn
 	{
 		background: none;
-		border: 1px solid rgb(92, 91, 91);
+		border: 1px solid #fff;
 		border-radius: 2px;
-		color: rgb(107, 107, 107);
+		color: #fff;
 		font-weight: bold;
 	}
 #portfolio .portfolio-thumb:hover .portfolio-overlay
@@ -433,7 +419,7 @@ header .social-icon li a
 /* start contact */
 #contact
 	{
-		background: rgba(100, 100, 100, 0.699);
+		background: #202020;
 	}
 #contact .form-control
 	{
@@ -466,7 +452,7 @@ header .social-icon li a
 	}
 #contact address
 	{
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid #505050;
 		padding-top: 30px;
 	}
 #contact address .address-title
@@ -482,8 +468,7 @@ header .social-icon li a
 	}
 #contact address .fa
 	{
-		border: 1px solid white;
-		color: white;
+		border: 1px solid #fff;
 		border-radius: 2px;
 		width: 40px;
 		height: 40px;
@@ -497,12 +482,11 @@ header .social-icon li a
 /* start copyright */
 #copyright
 	{
-	margin: 20px;
-		
+		padding: 20px;
 	}
 #copyright p
 	{
-		font-weight: 200px;
+		font-weight: 400;
 	}
 /* end copyright */
 
@@ -525,9 +509,9 @@ header .social-icon li a
 	}
 .social-icon li a
 	{
-		border: 1px solid white;
+		border: 1px solid #fff;
 		border-radius: 2px;
-		color: white;
+		color: #fff;
 		width: 40px;
 		height: 40px;
 		line-height: 40px;
@@ -539,7 +523,7 @@ header .social-icon li a
 	}
 .social-icon li a:hover
 	{
-		background-image: linear-gradient(120deg, #89f6fe7a 0%, #66a6ff 170%);
+		background: #28a7e9;
 		border-color: transparent;
 	}
 /* end social icon */
@@ -552,13 +536,13 @@ header .social-icon li a
 
 /* start 980 media quires */
 @media only screen and ( max-width: 980px ) {
-	#events .events-wrapper
+	#team .team-wrapper
 		{
 			margin-top: 40px;
 		}
 	#portfolio .portfolio-thumb .portfolio-overlay
 	{
-		background: #ffffff;
+		background: #28a7e9;
 		top: 0;
 		left: 0;
 		right: 0;
