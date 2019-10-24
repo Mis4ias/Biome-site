@@ -4,16 +4,16 @@ http://www.templatemo.com/preview/templatemo_450_awesome
 */
 
 body {
-  background: #8e9eab; /* fallback for old browsers */
+  background: #a0abb4; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #eef2f3,
-    #8e9eab
+    #c2d0db
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     #eef2f3,
-    #8e9eab
+    #c6d3df
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -52,7 +52,10 @@ h1 {
 #portfolio,
 #contact {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
+}
+#carouselShadow{
+	box-shadow: 2px 7px 15px grey;
 }
 /* end news events service portfolio contact */
 
@@ -275,8 +278,8 @@ header .social-icon li a {
 }
 
 @media (min-width: 1200px) {
-  #myCarousel .list-group {
-    margin-right: 40px;
+  #myCarousel .list-group-item {
+    
   }
 }
 
@@ -302,10 +305,10 @@ header .social-icon li a {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   position: relative;
+  box-shadow: 1px 3px 2px grey;
 }
 #events .events-wrapper:hover {
   cursor: pointer;
-  opacity: 0.4;
   bottom: 4px;
 }
 #events .events-wrapper .events-des {
@@ -411,6 +414,7 @@ header .social-icon li a {
 /* start contact */
 #contact {
   background: rgba(100, 100, 100, 0.616);
+  margin-top: 20px;
 }
 #contact .form-control {
   background: transparent;
