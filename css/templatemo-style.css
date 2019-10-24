@@ -4,7 +4,17 @@ http://www.templatemo.com/preview/templatemo_450_awesome
 */
 
 body {
-  background-image: linear-gradient(120deg, #96dedecb 25%, #50b7c9ce 75%);
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   overflow-x: hidden; /* prevent horizontal scrollbar from appearing */
@@ -32,7 +42,7 @@ h2 span {
 h1 {
   font-weight: bold;
   font-family: Helvetica;
-  text-shadow: 0.09em 0.01em 0.3em black;
+  text-shadow: 0.09em 0.01em 0.3em rgba(0, 0, 0, 0.055);
 }
 
 /* start news events service portfolio contact */
@@ -200,8 +210,8 @@ header .social-icon li a {
 
 /* start home */
 #home {
-  color: white;
-  background: url("../images/home-bg.jpg") no-repeat;
+  color: #333;
+  background: white; /* url("../images/home-bg.jpg") no-repeat;*/
   background-size: cover;
   padding-top: 160px;
   padding-bottom: 100px;
