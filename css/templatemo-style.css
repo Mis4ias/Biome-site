@@ -176,20 +176,21 @@ header .social-icon li a {
 
 /* start nagivation */
 .navbar-default {
-  background: rgba(100, 100, 100, 0.699);
+  background: rgb(255, 255, 255);
   border: none;
   box-shadow: none;
   margin: 0 !important;
 }
 .navbar-default .navbar-brand {
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 30px;
   height: 70px;
   line-height: 40px;
-  padding: 12px 0px 0px 12px;
+  padding: 0px 0px 0px 0px;
 }
+
 .navbar-default .navbar-nav li a {
-  color: #eee;
+  color: rgba(0, 0, 0, 0.671);
   font-weight: bold;
   font-size: 13px;
   height: 70px;
@@ -199,6 +200,7 @@ header .social-icon li a {
 .navbar-default .navbar-nav > li > a.current {
   color: #28a7e9;
 }
+
 .templatemo-nav {
   border-radius: 0;
   width: 100%;
