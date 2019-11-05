@@ -215,12 +215,12 @@ header .social-icon li a {
 
 /* start home */
 #home {
-  color: #333;
+  color: rgb(255, 255, 255);
   background: url("../images/home2.png") no-repeat;
   background-size: cover;
   padding-top: 160px;
   padding-bottom: 100px;
-  min-height: 400px;
+  min-width: 1200px;
 }
 #home h1 {
   font-weight: 300;
